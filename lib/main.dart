@@ -1,21 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ys02_20230313/pageview/page_view_basic.dart' as pvBasic;
 
 void main() {
-  runApp(FlutterYSApp());
-}
-
-class FlutterYSApp extends StatelessWidget {
-  const FlutterYSApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
-        useMaterial3: true,
-      ),
-      home: Placeholder(),
-    );
-  }
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: pvBasic.PageViewBasic(),
+  ));
 }
